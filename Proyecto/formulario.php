@@ -42,9 +42,21 @@ session_start();
  <input type="text" name="usuario" maxlength="255"  required>
  <br/><br/>
  </div>
+ <!--Nombre Usuario-->
+<div class="form-group">
+<label for="nombre_usuario">Nombre Usuario:</label><br>
+<input type="text" name="nombre_usuario" maxlength="255"  required>
+<br/><br/>
+</div>
+<!--Numero De Cuenta-->
+<div class="form-group">
+<label for="no_cuenta">Numero De Cuenta:</label><br>
+<input type="text" name="numero_cuenta" maxlength="255"  required>
+<br/><br/>
+</div>
  <!-- Direcion -->
 <div class="form-group">
-<label for="direcion">Direccion:</label><br>
+<label for="direccion">Direccion:</label><br>
 <input type="text" name="direccion" maxlength="255" required>
 <br/><br/>
 </div>
@@ -54,22 +66,12 @@ session_start();
 <input type="text" onkeypress="return valida(event)" name="telefono" maxlength="15" required>
 <br/><br/>
 </div>
-<!-- Email -->
+<!-- Correo -->
 <div class="form-group">
 <label for="correo">Email:</label><br>
 <input type="email" name="correo" maxlength="35" required>
 <br/><br/>
 </div>
-<!--Nombre_usuario-->
-<div class="form-group">
-<label for="nombre">Nombre Usuario:</label><br>
-<input type="text" name="nombre_usuario" maxlength="255"  required>
-<br/><br/>
-</div>
-<!--Password-->
-<div class="form-group">
-<label for="pass">Password:</label><br>
-<input type="password" name="password" maxlength="8" required>
 </div>
  <br/><br/>
  <input type="submit" name="submit" class="btn btn-primary" value="Registrarme">
