@@ -1,5 +1,5 @@
 <?php
-$host_db="localhost";
+$host_db="sql202.infinityfree.com";
 $user_db="if0_35173766";
 $pass_db="e5lFFaqgy3eY9";
 $db_name="if0_35173766_asistencia";
