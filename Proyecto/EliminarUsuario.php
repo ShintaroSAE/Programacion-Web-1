@@ -17,7 +17,9 @@
 
     </form>
     
-    <h1><a href="index.php">Inicio de listas</a></h1>
+    <h1><a href="index.php">Tabla de Registros</a></h1>
+
+    <h1><a href="formulario.php">Formulario de Registro</a></h1>
 
 </body>
 
