@@ -17,7 +17,7 @@ echo "<table border='2' >
     <tr>
         <th>ID</th>
         <th>Usuario</th>
-        <th>No Cuenta Institucional</th>
+        <th>Numero de Cuenta</th>
         <th>Direccion</th>
         <th>Telefono</th>
         <th>Correo Electronico</th>
@@ -28,12 +28,13 @@ if ( $count>0 ){
     //aqui se pintarian los registro de la DB
     while( $row = mysqli_fetch_assoc($resultado)  ){
      echo "<tr>";
-     echo"<td>". $row['numero'] ."</td>";
+     echo"<td>". $row['id'] ."</td>";
+     echo"<td>". $row['nombre'] ."</td>";
      echo"<td>". $row['nombre_usuario'] ."</td>";
      echo"<td>". $row['no_cuenta'] ."</td>";
      echo"<td>". $row['direccion'] ."</td>";
      echo"<td>". $row['telefono'] ."</td>";
-     echo"<td>". $row['email'] ."</td>";
+     echo"<td>". $row['correo'] ."</td>";
      echo "</tr>";
      
     }
@@ -45,7 +46,9 @@ if ( $count>0 ){
     echo"<h1 style='color:red' >Sin Ningun registro</h1>";
     }
 
-    echo "<h1><a href='EliminarUsuario.php'>ElimnarUsuario</a></h1>";
+    echo "<h1><a href='EliminarUsuario.php'>EliminarUsuario</a></h1>";
+
+    echo "<h1><a href='formulario.php'>Formulario De Registro</a></h1>";
 
 ?>
 
