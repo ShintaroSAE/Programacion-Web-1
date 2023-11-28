@@ -34,7 +34,7 @@ if($count ==1 ){
 
 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
 echo "<h4>" . "Bienvenido: " . $_POST['usuario'] . "</h4>" . "\n\n";
-echo "<h5>" . "<a href='./form_registro.php'>Registro</a>" . "</h5>";
+echo "<h5>" . "<a href='./f.php'>Registro</a>" . "</h5>";
 
 //termina el else
 }
