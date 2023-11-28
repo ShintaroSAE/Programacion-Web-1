@@ -83,7 +83,9 @@ session_start();
 
  </form>
  
-
+ <h1><a href="index.php">Tabla de Registros</a></h1>
+ 
+ <h1><a href="EliminarUsuario.php">Eliminar Usuario</a></h1>
 
  </body>
 </html>
