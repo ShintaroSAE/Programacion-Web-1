@@ -30,16 +30,13 @@ session_start();
  <h2 style="text-align:center">Registro </h2>
 </header>
 
-
-
-
 <form action="funcion_registro.php" method="post">
 
  <hr />
  <!--Nombre-->
  <div class="form-group">
  <label for="nombre">Nombre Completo:</label><br>
- <input type="text" name="usuario" maxlength="255"  required>
+ <input type="text" name="nombre" maxlength="255"  required>
  <br/><br/>
  </div>
  <!--Nombre Usuario-->
@@ -51,7 +48,7 @@ session_start();
 <!--Numero De Cuenta-->
 <div class="form-group">
 <label for="no_cuenta">Numero De Cuenta:</label><br>
-<input type="text" name="numero_cuenta" maxlength="255"  required>
+<input type="text" name="no_cuenta" maxlength="255"  required>
 <br/><br/>
 </div>
  <!-- Direcion -->
@@ -75,16 +72,12 @@ session_start();
 </div>
  <br/><br/>
  <input type="submit" name="submit" class="btn btn-primary" value="Registrarme">
- <input type="reset" name="clear" class="btn btn-primary" value="Borrar">
- 
-<select>
-     
-</select>     
+ <input type="reset" name="clear" class="btn btn-primary" value="Borrar"> 
 
  </form>
  
  <h1><a href="index.php">Tabla de Registros</a></h1>
- 
+
  <h1><a href="EliminarUsuario.php">Eliminar Usuario</a></h1>
 
  </body>

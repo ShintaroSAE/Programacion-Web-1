@@ -1,4 +1,4 @@
-CREATE TABLE `usuarios` (
+CREATE TABLE `asistencia` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `nombre` text COLLATE utf8mb4_spanish2_ci NOT NULL,
     `nombre_usuario` text COLLATE utf8mb4_spanish2_ci NOT NULL,
