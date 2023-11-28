@@ -12,24 +12,24 @@ $result = $conexion -> query($buscarUsuario);
 $count = mysqli_num_rows($result);
 
 if($count ==1 ){
-    echo'El nombre se usuario ya a sido ocupado';
+    echo'El nombre se usuario ya ha sido ocupado';
     header('Location: ./formulario.php');
     
 }else{
     mysqli_query($conexion, "INSERT INTO usuarios (
     nombre,
+    nombre_usuario,
+    no_cuenta,
     direccion,
     telefono,
-    correo,
-    nombre_usuario,
-    password)
-        VALUES(
-    '$_POST[usuario]',
+    correo)
+    VALUES(
+    '$_POST[nombre]',
+    '$_POST[nombre_usuario]',
+    '$_POST[no_cuenta]',
     '$_POST[direccion]',
     '$_POST[telefono]',
-    '$_POST[correo]',
-    '$_POST[nombre_usuario]',
-    '$_POST[password]'        
+    '$_POST[correo]'        
     )");
 
 echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
