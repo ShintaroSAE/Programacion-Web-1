@@ -33,7 +33,7 @@ session_start();
 
 
 
-<form action="submit_registro.php" method="post">
+<form action="funcion_registro.php" method="post">
 
  <hr />
  <!--Nombre-->
